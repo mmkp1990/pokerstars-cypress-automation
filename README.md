@@ -1,48 +1,26 @@
-# Cypress Cucumber Tutorial
-
-Learning Cucumber and BDD concepts with Cypress and the [cypress-cucumber-preprocessor](https://github.com/TheBrainFamily/cypress-cucumber-preprocessor) plugin.
-
-![Work In Progress](https://www.repostatus.org/badges/latest/wip.svg)
-
-## About
-
-This repo is a learning ground for a few things:
-
-- Behavior Driven Development Concepts
-- Cucumber - a framework for writing and running BDD-style tests with Feature Files and Step Definitions
-- Gherkin - a syntax for writing BDD features (Feature, Background, Example/Scenario, Given/When/Then, etc.)
-- Using Cypress plugins
-- Designing a test suite
-
-## Test Cases & Concepts
-
-This repo uses the [recommended way](https://github.com/TheBrainFamily/cypress-cucumber-preprocessor#step-definitions) of file organization by storing step definitions in a folder with the same name as the feature file. We will use separate feature files, however they can also be [bundled for improved performance](https://github.com/TheBrainFamily/cypress-cucumber-preprocessor#bundled-features-files).
-
-Each of these named folders will be used to demonstrate different applications for Cucumber in test code. New test cases will be added over time. Feel free to open an issue to request a test case example or contribute an example of your own!
-
-### Navigation
-
-Tests the navigation link of the website.
-
-- Reusable Step Definitions ([documentation](https://github.com/TheBrainFamily/cypress-cucumber-preprocessor#reusable-step-definitions))
-
-
-## Resources
-
-Shout-out to the following free tutorials I leveraged:
-
-- [Test Automation University - Cucumber with Javascript](https://testautomationu.applitools.com/cucumber-javascript-tutorial/)
-- [QA Camp - Cypress - Cucumber (YouTube)](https://www.youtube.com/watch?v=qupyblTFqd8)
-
-I'd also recommend checking out:
-
-- [Cucumber Documentation](https://cucumber.io/docs/cucumber/)
-- [The very comprehensive README for the cypress-cucumber-preprocessor plugin](https://github.com/TheBrainFamily/cypress-cucumber-preprocessor)
+## Developer - Mayur Patel
 
 ## Installation
 
-`npm install`
+- To install the three packages mentioned in: https://github.com/thestarsgroup/front-end-tech-test - npmjs, cypress and cypress cucumber preprocessor.
+- In addition, perform an npm install on the following:
+    - oddslib
 
-`npx cypress open`
+## Run Tests
+- Simply run npx cypress run and this will run the tests against a chrome browser.
+- Another way is run npx cypress open and it will open up the cypress test dashboard and you can select to
+run all the tests or specfic features files within there.
 
-![Test run](./cucumber-cypress-test.gif)
+## View Test Results:
+- You can view the test results in the terminal whilst it runs the test.
+- Within the 'videos' folder, you can view videos of the feature files to see how the tests were executed against a chrome browser within cypress.
+- There is a screenshots folder which displays screenshots of failed tests only.
+
+## Improvements
+- As I know this is a short exercise, there would have been a few ways to improve the framework going forward, this can include:
+ - Updating package json to allow a steps definiton folder to be added. At the moment the cypress cucumber preprocessor has a default way to pick up step definitions where the step definition files need to be within folders that match the name of the specs in order to be read from. I think it would be better to have step definition files in a seperate step definitions folder.
+
+ - Potentially also include in the package json so keys that will run certain cypress commands in command line. As mentioned in this documentations:
+    - https://docs.cypress.io/guides/guides/command-line#Installation
+
+ - Reporting would be a good addition to add.

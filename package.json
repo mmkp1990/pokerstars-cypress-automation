@@ -13,6 +13,11 @@
     "nonGlobalStepDefinitions": true
   },
   "devDependencies": {
+    "@types/cypress-cucumber-preprocessor": "^4.0.1",
     "cypress-cucumber-preprocessor": "^2.5.5"
+  },
+  "dependencies": {
+    "mathjs": "^9.4.4",
+    "oddslib": "^2.1.0"
   }
 }
