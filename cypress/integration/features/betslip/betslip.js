@@ -1,4 +1,4 @@
-import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps';
+import { Then, And } from 'cypress-cucumber-preprocessor/steps';
 import BetSlipElements from '../../elements/betSlipElements';
 import Formatters from '../../common/formatters';
 
